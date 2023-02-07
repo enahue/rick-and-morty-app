@@ -38,7 +38,7 @@ function App() {
   };
 
   useEffect(() => {
-    setPage(1)
+    setPage(1);
     const dimension = nameLocation === "" ? getRandomNumber(126) : nameLocation;
     const URL = `https://rickandmortyapi.com/api/location/${dimension}`;
     axios
@@ -49,19 +49,38 @@ function App() {
 
   return (
     <div className="App">
-      <form onSubmit={handleSubmit}>
-        <input type="text" id="idLocation" placeholder="Type a location id" />
-        <button>Search</button>
-      </form>
-      <LocationInfo location={location} />
-      {pagination().map((residentUrl) => (
-        <ResidentCard key={residentUrl} residentUrl={residentUrl} />
-      ))}
-      <ul>
-        {
-          numbersPage().map(numberPage => <li onClick={() => setPage(numberPage)} key={numberPage}>{numberPage}</li>)
-        }
-      </ul>
+      <div className="title-bg">
+        <div className="title">
+          Rick<span>and</span>Morty
+        </div>
+        <div className="title title-middle">
+          Rick<span>and</span>Morty
+        </div>
+        <div className="title title-bottom">
+          Rick<span>and</span>Morty
+        </div>
+      </div>
+      <div className="search-bar">
+        <form onSubmit={handleSubmit}>
+          <input type="text" id="idLocation" placeholder="Type a location id" />
+          <button>Search</button>
+        </form>
+      </div>
+      <div className="content">
+        <LocationInfo location={location} />
+        {pagination().map((residentUrl) => (
+          <ResidentCard key={residentUrl} residentUrl={residentUrl} />
+        ))}
+      </div>
+      <div className="navigation">
+        <ul>
+          {numbersPage().map((numberPage) => (
+            <li onClick={() => setPage(numberPage)} key={numberPage}>
+              {numberPage}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

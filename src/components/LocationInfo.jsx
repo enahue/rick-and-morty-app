@@ -2,6 +2,7 @@ import React from 'react'
 
 const LocationInfo = ({location}) => {
   return (
+    <div className='location-card'>
     <section>
     <h2>{location?.name}</h2>
     <ul>
@@ -10,6 +11,7 @@ const LocationInfo = ({location}) => {
       <li><span>Population:</span>{location?.residents.length}</li>
     </ul>
   </section>
+  </div>
   )
 }
 

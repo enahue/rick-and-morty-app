@@ -13,11 +13,11 @@ const ResidentCard = ({residentUrl}) => {
   }, [])
 
   return (
-   <article>
+   <article className='character-card'>
     <div>
-      <img src={residentInfo?.image} alt="" />
+      <img  className='img-card' src={residentInfo?.image} alt="" />
     </div>
-    <section>
+    <section className='card-name'>
       <h3>{residentInfo?.name}</h3>
       <ul>
         <li><span>Specie:</span>{residentInfo?.species}</li>
