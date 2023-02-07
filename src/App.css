@@ -15,6 +15,9 @@ body {
   background-image: url("./assets/images/HeaderImage.jpg");
   background-size: cover;
   background-position: center;
+  background: url("./assets/images/HeaderImage.jpg") 50%/ cover
+  border-box
+  padding-box;
   /* background-position-y: -150px; */
 }
 
@@ -53,24 +56,31 @@ body {
 }
 
 .search-bar {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .search-bar input {
-  height: 30px;
+  height: 50px;
   width: 40vw;
   min-width: 250px;
   box-shadow: -10px 2px 17px 14px rgba(134, 189, 64, 0.95);
+  border-radius:  12px 0 0 12px;
+  margin: 0;
+  color: white;
+  background-color: rgb(46, 40, 40);
 }
 .search-bar button {
-  height: 35px;
+  height: 50px;
   width: 80px;
   box-shadow: 10px 2px 17px 14px rgba(134, 189, 64, 0.95);
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: bold;
   color: white;
-  background-color: #01383a;
+  background-color: #0eb453;
+  margin: 0;
+  border-radius: 0 12px 12px 0;
 }
 
 .location-card {
@@ -95,7 +105,7 @@ body {
   list-style: none;
   text-align: left;
   overflow: scroll;
-  box-sizing: content-box;
+
 }
 .location-card ul span {
   font-size: 30px;
@@ -107,7 +117,9 @@ body {
   border-radius: 8px;
   margin:12px 12px 12px 12px;
 }
-
+.location-card section{
+  /* box-sizing: content-box; */
+}
 .content {
   display: flex;
   justify-content: center;
@@ -141,7 +153,9 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
-
+ .img-card{
+  border-radius: 12px 12px 0 0 ;
+ }
 .card-name {
   display: flex;
   justify-content: space-between;
