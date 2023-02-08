@@ -110,7 +110,7 @@ body {
   margin-right: 10px;
 }
 .location-card li{
-  background-color: rgb(26, 22, 22);
+  background-color: rgb(31, 34, 31);
   padding: 30px;
   border-radius: 8px;
   margin:12px 12px 12px 12px;
@@ -143,6 +143,37 @@ body {
   padding: 10px;
   width: 300px;
   /* height: 480px; */
+  position: relative;
+}
+.status-resident{
+  position: absolute;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 6px;
+  background-color: #01383a;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.status-circle{
+  width: 12px;
+  height: 12px;
+  aspect-ratio: 1;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.Alive{
+  background-color: #0eb453;
+}
+
+.unknown{
+  background-color: grey;
+}
+.status-name{
+font-weight: normal;
+font-size: 15px;
 }
 
 .character-card header {
