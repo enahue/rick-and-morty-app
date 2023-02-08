@@ -5,7 +5,6 @@
 }
 
 body {
-  /* background-color: rgb(46, 40, 40); */
   background-color: #05292e;
   color: white;
 }
@@ -25,7 +24,7 @@ body {
   width: 100%;
   text-align: center;
   font-family: "Get Schwifty";
-  font-size: 5em;
+  font-size: 4.5em;
   color: #08bae3;
   z-index: 50;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
@@ -241,8 +240,12 @@ font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    /* flex-wrap: wrap; */
-    /* margin-right: 40px; */
     box-sizing: content-box;
   }
+  .title {
+    font-size: 5em;
+
+  }
+
 }
+
