@@ -20,11 +20,11 @@ body {
 
 .title {
   position: absolute;
-  top: 1.9em;
+  top: 2.5em;
   width: 100%;
   text-align: center;
   font-family: "Get Schwifty";
-  font-size: 4.5em;
+  font-size: 4.2em;
   color: #08bae3;
   z-index: 50;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
@@ -243,6 +243,7 @@ font-size: 15px;
     box-sizing: content-box;
   }
   .title {
+    top: 1.9em;
     font-size: 5em;
 
   }
