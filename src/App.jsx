@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
 import LocationInfo from "./components/LocationInfo";
+import Pagination from "./components/Pagination";
 import ResidentCard from "./components/ResidentCard";
 import { getRandomNumber } from "./utils/handleRandom";
 
@@ -66,21 +67,16 @@ function App() {
           <button>Search</button>
         </form>
       </div>
-      <div className="content">
+      <div className="content-nav-header">
         <LocationInfo location={location} />
+        </div>
+        <Pagination numbersPage={numbersPage} setPage={setPage}/>
+      <div className="content">
         {pagination().map((residentUrl) => (
           <ResidentCard key={residentUrl} residentUrl={residentUrl} />
-        ))}
-      </div>
-      <div className="navigation">
-        <ul>
-          {numbersPage().map((numberPage) => (
-            <li onClick={() => setPage(numberPage)} key={numberPage}>
-              {numberPage}
-            </li>
           ))}
-        </ul>
       </div>
+      <Pagination numbersPage={numbersPage} setPage={setPage}/>
     </div>
   );
 }

@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: rgb(46, 40, 40);
+  /* background-color: rgb(46, 40, 40); */
+  background-color: #05292e;
   color: white;
 }
 
@@ -15,7 +16,7 @@ body {
   background-image: url("./assets/images/HeaderImage.jpg");
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 97%, 73% 85%, 59% 100%, 38% 88%, 21% 96%, 2% 91%);
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 73% 85%, 59% 100%, 38% 88%, 21% 96%, 0 91%);
 }
 
 .title {
@@ -114,22 +115,28 @@ body {
   border-radius: 8px;
   margin:12px 12px 12px 12px;
 }
-.location-card section{
-  /* box-sizing: content-box; */
-}
+
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 5vw;
+  /* margin: 1vw; */
+}
+.content-nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* margin: 5vw; */
+  margin-top: 2vw;
 }
 
 .character-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: rgb(26, 22, 22);
+  background-color: rgb(31, 34, 31);
   color: rgb(247, 240, 240);
   border-radius: 15px;
   margin: 25px;
@@ -173,7 +180,7 @@ body {
   gap: 10px;
 }
 .navigation ul {
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 
 .navigation li {
